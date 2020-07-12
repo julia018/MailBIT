@@ -1,0 +1,286 @@
+/* Eric Mayer style reset
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*-----------------------------------------------------------*/
+
+/* kanit-regular - latin */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kanit Regular'), local('Kanit-Regular'),
+         url('../fonts/kanit-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/kanit-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  html {
+      box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+      box-sizing: inherit;
+  }
+
+  body {
+      font-family: 'Kanit';
+      font-style: normal;
+      font: 16px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #060402;
+      max-width: 100%;
+  } 
+
+  a {
+      text-decoration: none;
+  }
+  
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #FFFFFF;
+  }
+
+  .wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+
+  }
+
+  .header__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      height: 60px;
+  }
+
+  .header__list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .header__item {
+      margin-right: 60px;
+  }
+
+  .header__item:last-child {
+      margin-right: 0px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #060402;
+    text-decoration: none;
+  }
+
+  .header__link:hover, .header__link:focus, .header__link:active {
+      opacity: .75;
+  }
+
+  /* Intro start */
+  .block2 {
+      background: url(../img/image1.jpg) no-repeat center;
+      background-size: cover;
+      height: 800px;
+      max-width: 100%;
+  }
+
+  .block2 > .wrapper {
+      padding-top: 216px;
+      padding-left: 320px;
+  }
+
+  .block2__title {
+    font-size: 70px;
+    line-height: 105px;
+    margin-bottom: 2px;
+  }
+
+  .block2__subtitle {
+    max-width: 583px;
+    font-size: 24px;
+    line-height: 36px; 
+    color: #C0C0C0;
+    margin-bottom: 43px;
+  }
+
+  .block2__subtitle-red {   
+    color: #ED1B24;
+  }
+
+  .contact_sales {
+    width: 266px;
+    height: 60px;
+    border-radius: 100px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(177.93deg, #A91D1C 6.92%, #ED1B24 93.08%);
+  }  
+
+  /*-------form-container---------------*/
+  .form-container {
+      
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background: rgb(123, 123, 170);
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      display: none;
+  }
+
+  .prompt-form {
+      opacity: 1; 
+      width: 30%;
+      position: fixed;
+      top: 0;
+      margin-top: 10%;
+      background-color: rgb(211, 53, 53);
+      
+  }
+
+  .cross {
+      margin-left: 95%;
+      cursor: pointer;      
+  }
+
+  input {
+      display: block;
+      margin-bottom: 5%;
+  }
+
+  .block4 {
+    background: url(../img/image2.png) no-repeat center;
+    background-size: cover;
+    height: 726px;
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
+  
+  /* Services start*/
+  .services {
+    margin: auto;
+    width: 67%;
+  }
+
+  .services__cards {
+      width: 100%;
+  }
+
+  .services__line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+
+  .services__line:last-child {
+    margin-bottom: 0;
+  }
+
+  .services__title {
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .services__card {
+      background: url(../img/union.png) center no-repeat;
+      width: 30%;
+      height: 380px;
+      border: 1px solid #C4C4C4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .services__card-img {
+      margin-top: 15%;
+  }
+
+  .services__card-title {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 10%;
+  }
+
+  .services__card-subtitle {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #202020;
+    max-width: 70%;
+    text-align: center;
+    padding-bottom: 15%;
+  }
+
+  /* Services end */
+
+
+
