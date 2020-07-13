@@ -166,6 +166,7 @@ border-spacing: 0;
     font-style: normal;
     font-weight: normal;
     border: none;
+    outline: none;
     font-size: 18px;
     line-height: 27px;
     text-transform: uppercase;
@@ -186,7 +187,6 @@ border-spacing: 0;
       z-index: 999;
       background: rgb(123, 123, 170);
       opacity: 0.9;
-      display: flex;
       justify-content: center;
       display: none;
   }
@@ -209,17 +209,10 @@ border-spacing: 0;
   input {
       display: block;
       margin-bottom: 5%;
-  }
-
-  .block4 {
-    background: url(../img/image2.png) no-repeat center;
-    background-size: cover;
-    height: 726px;
-    margin-bottom: 60px;
-    max-width: 100%;
-  }
+  }  
   
   /* Services start*/
+
   .services {
     margin: auto;
     width: 67%;
@@ -282,5 +275,100 @@ border-spacing: 0;
 
   /* Services end */
 
+  /* Messages start */
+  .messages {
+    background: url(../img/image2.png) no-repeat center;
+    background-size: cover;
+    height: 726px;
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
 
+  .messages__wrapper {      
+    margin: auto;
+    width: 67%;
+    display: flex;
+    height: 100%;
+  }
+
+  .messages__title {
+    font-size: 40px;
+    line-height: 100%;
+    margin-top: 10%;
+  }
+
+  .messages__separator {
+      width: 30%;
+      height: 1%;
+      margin-top: 3%;
+  }
+
+  .massages__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 7%;
+    max-width: 77%;
+  }
+
+  .messages__subtitle-red {
+    color: #ED1B24;
+  }
+
+  .messages_learn-more {
+    font-size: 24px;
+    line-height: 36px;
+    color: #ED1B24;
+    margin-top: 3%;
+  }
+
+  .messages_imgs-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50%;
+      width: 30%;
+      margin-top: 10%;
+  }
+
+    /* Messages images start*/
+    .messages__image {
+        object-fit: cover;
+        margin-bottom: 5%;
+        height: auto;
+    }
+
+    .messages__image:last-child {
+        margin-top: 20%;
+    }
+
+    .messages__image1 {
+        width: 20%;
+        margin-left: 60%;
+        transform: rotate(-15deg);
+    }
+
+    .messages__image2 {
+        width: 30%;
+    }
+
+    .messages__image3 {
+        width: 40%;
+        margin-left: 40%;
+        transform: rotate(-45deg);
+    }
+
+    .messages__image4{
+        width: 50%;
+        margin-left: -30%;
+        transform: rotate(22.39deg);
+    }
+
+    .messages__image5 {
+        width: 65%;
+        margin-left: -60%;
+        transform: rotate(-45deg);
+    }
+    /* Messages images end*/
+
+  /* Messages end */
 
